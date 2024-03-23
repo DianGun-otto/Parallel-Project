@@ -27,6 +27,6 @@ void init(int n)
 			ord_sum[i] += a[j] * b[j][i];
 			
         gettimeofday(&end,NULL);
-		 cout << "平凡算法:" <<fixed<<setprecision(4)<<(end.tv_usec- start.tv_usec)/1000.0 << "ms"<< endl;
+		 cout << "平凡算法:" <<fixed<<setprecision(4)<<(end.tv_sec - start.tv_sec)*1000.0+(end.tv_usec- start.tv_usec)/1000.0 << "ms"<< endl;
 	return 0;
  }

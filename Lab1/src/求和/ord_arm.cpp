@@ -23,7 +23,7 @@ float ord() {
 
     gettimeofday(&end,NULL);
 
-    double interval=(double)((unsigned long long)(end.tv_usec- start.tv_usec)/1000.0);
+    float interval=((end.tv_sec - start.tv_sec)*1000.0+(end.tv_usec- start.tv_usec)/1000.0);
     return interval;
 }
 

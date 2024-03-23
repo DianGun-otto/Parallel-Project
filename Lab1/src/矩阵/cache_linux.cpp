@@ -29,6 +29,6 @@ void init(int n)
 			cache_sum[i] += a[j] * b[j][i];
 			
         gettimeofday(&end,NULL);
-		 cout << "cache算法:" <<fixed<<setprecision(3)<<(end.tv_usec- start.tv_usec)/1000.0<< "ms" << endl;
+		 cout << "cache算法:" <<fixed<<setprecision(3)<<(end.tv_sec - start.tv_sec)*1000.0+(end.tv_usec- start.tv_usec)/1000.0<< "ms" << endl;
 		 return 0;
 }
