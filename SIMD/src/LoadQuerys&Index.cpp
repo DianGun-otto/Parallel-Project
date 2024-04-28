@@ -97,6 +97,12 @@ void loadIndex(vector<int> Query,vector<vector<uint32_t>> &Lists){// 根据单�
     sort(Lists);
 }
 
+void showresult(vector<int>result){
+    for(int i=0;i<result.size();i++)
+      cout<<result[i]<<" ";
+    cout<<endl;
+}
+
 // int main(){
 //     vector<vector<int>> Querys;
 //     loadQuerys(Querys);
